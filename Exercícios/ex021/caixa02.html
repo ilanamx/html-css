@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+   
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+        @font-face {
+            font-family: 'candia';
+            src:url(fontes/candia\ script.otf) format('opentype');
+            font-weight: lighter;
+           
+        }
+
+        body {
+            font-family:'Quicksand', sans-serif;
+            background-color: rgb(184, 179, 179);
+            margin: 0px;
+            
+        }
+        header {
+            
+            background-color: rgb(253, 253, 252);
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+        
+        }
+
+        header > h1 {
+            margin: 8px;
+        }
+
+
+        nav {
+            
+            text-align: center;
+            background-color: lightgreen;
+            padding: 1px;
+            border-radius: 8px;
+            margin-top: 15px;
+        }
+
+        nav > a {
+            font-family:'candia', Arial, sans-serif;
+            font-size: 1em;
+            font-weight:lighter;
+            text-decoration: none;
+            text-align: center;
+            color: rgb(54, 52, 52);
+            margin-right: 30px;
+            margin-left: 30px;
+           
+           
+            
+        }
+
+        nav > a:hover {
+            color: rgb(63, 167, 89);
+        }
+
+        main {
+            
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 10px 30px 30px;
+            box-shadow: 2px 2px 7px 0px rgb(0 0 0 / 25%);
+            
+        }
+
+        article {
+            background-color: rgba(67, 231, 89, 0.219);
+            padding: 5px;
+            border-radius: 10px 10px 30px 30px;
+        }
+
+
+
+        article > aside {
+            font-size: 0.7em;
+            font-weight: bold;
+            background-color: rgb(165, 168, 166);
+            border-radius: 10px;
+            margin-right: 100px; 
+            margin-left: 100px;
+            margin-bottom: 3px;
+            text-align: center;
+            padding: 1px;
+            
+            
+            
+        }
+
+        footer {
+            margin: 0px;
+            font-size: 0.9em;
+            color: rgb(248, 249, 250);
+            background-color: gray;
+            text-align: center;
+            padding: 3px;
+                    
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <h2>Esporte Política Tecnologia</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ex, excepturi.</p>
+
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícias sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque accusantium quam qui iure odio quia tempora itaque repellendus? Et sint sapiente corporis blanditiis saepe. Vel adipisci voluptatem fugiat doloribus illo?</p>
+                <aside>Artigo escrito por José da Silva</aside>
+            </article>
+            
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido pelo CursoemVídeo</p>
+    </footer>
+    
+</body>
+</html>
