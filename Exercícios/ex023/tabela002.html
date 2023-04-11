@@ -6,28 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas</title>
     <style>
+        
         body {
             font-family: Arial, Helvetica, sans-serif;
         }
 
+        table {
+           width: 500px;
+           border-collapse: collapse;  
+           position: relative;
+        }
+        
+
+        td, th {
+            border: 1px solid black;
+            padding: 8px;
+        } 
+       
         caption {
             font-size: 1.3em;
             font-weight: bold;
             background-color: lightgray;
             padding: 8px;
         }
-
-        table {
-           width: 500px;
-           border-collapse: collapse; 
-            
+        
+        thead, tfoot {
+        background-color: rgb(46, 45, 45);
+        color: white;
         }
 
-        td, th {
-            border: 1px solid black;
-            padding: 8px;
-        } 
-        
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(46, 45, 45);
+        }
+
         tbody > tr:nth-child(odd) /* 2n-1 */ {
             background-color: rgb(255, 255, 255);
         }
@@ -35,18 +48,11 @@
 
         tbody > tr:nth-child(even) /* 2n */ {
             background-color: lightgray;
-    }
+        }
 
         td.num {
             text-align: right;
         }
-
-      thead, tfoot {
-        background-color: rgb(46, 45, 45);
-        color: white;
-      }
-
-      
 
     </style>
 </head>
@@ -186,5 +192,8 @@
                 </tr>
             </tfoot>
         </Table>
-</body>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto vel tempora perspiciatis. Quasi a error autem tenetur maxime! Et non, saepe ex veniam velit alias commodi ipsa. Ut, rerum aut!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo odit maxime tempore repellat molestiae mollitia quia ut veritatis praesentium tenetur veniam dolore earum doloremque qui voluptatum, nostrum officia eum in! Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quos eius quasi facilis optio quis harum eaque, sapiente, consequuntur impedit, numquam autem nostrum at repellat sint laboriosam praesentium sed in. </p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto vel tempora perspiciatis. Quasi a error autem tenetur maxime! Et non, saepe ex veniam velit alias commodi ipsa. Ut, rerum aut!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo odit maxime tempore repellat molestiae mollitia quia ut veritatis praesentium tenetur veniam dolore earum doloremque qui voluptatum, nostrum officia eum in! Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quos eius quasi facilis optio quis harum eaque, sapiente, consequuntur impedit, numquam autem nostrum at repellat sint laboriosam praesentium sed in. </p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto vel tempora perspiciatis. Quasi a error autem tenetur maxime! Et non, saepe ex veniam velit alias commodi ipsa. Ut, rerum aut!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo odit maxime tempore repellat molestiae mollitia quia ut veritatis praesentium tenetur veniam dolore earum doloremque qui voluptatum, nostrum officia eum in! Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quos eius quasi facilis optio quis harum eaque, sapiente, consequuntur impedit, numquam autem nostrum at repellat sint laboriosam praesentium sed in. </p>    
+    </body>
 </html>
