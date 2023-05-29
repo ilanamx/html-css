@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframes</title>
+    <style>
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        iframe#tela {
+            width: 84vw;
+            height: 400px;
+            border: 0px;
+            border: 1px solid black;
+
+        }
+
+       
+    </style>
+</head>
+<body>
+  <h1>Faça uma escolha</h1>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis voluptate nemo fuga dolorum, similique amet earum odio ipsa eveniet alias, molestiae, neque consequuntur architecto delectus ad aspernatur sed iste. Quibusdam.</p>
+
+  <ul> <!-- nomear a tag iframe, por ex, name="frame" e em seguida colocar target="frame" no link que precisa aparecer no espaço -->
+    <li><a href="paginas-extras/pag001.html" target="frame" >Primeira página</a></li>
+    <li><a href="paginas-extras/pag002.html" target="frame">Segunda página</a></li>
+    <li><a href="paginas-extras/pag003.html" target="frame">Terceira página</a></li>
+  </ul>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis culpa obcaecati aliquid aut temporibus, quaerat soluta eum explicabo architecto aperiam ipsa, distinctio ut ea repellat quos, asperiores labore fuga molestiae Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid beatae doloribus id earum excepturi, sapiente, dolor quo voluptatibus, aut molestias iusto ad fugiat praesentium quae odit nostrum. Aut, enim error.
+  </p> 
+  <!-- No src pode ser colocado o caminho da página que deverá abrir no frame-->
+  <iframe id="tela" name="frame" src="paginas-extras/pag001.html">
+    <a href="">Infelismente seu navegador não é compatível com isso</a>
+  </iframe>
+  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis illum id, sequi quaerat neque vel eos eum assumenda eligendi, ut repudiandae quibusdam nesciunt modi quam earum voluptatibus. Explicabo, alias temporibus.</p>
+</p>  
+<!-- No srcdoc pode ser escrito a mensagem que deverá aparecer na tela, assim como colocar tags como h1, p, img (dentro de aspas simples '')-->
+<iframe id="tela" name="frame" srcdoc="<<h1>Escolha uma página acima</h1> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga culpa Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci cupiditate, fugit id vitae, blanditiis quisquam molestias officiis modi eius, dolores eum ab sunt officia. Doloremque cupiditate sint nihil tempore quidem?</p> <img src='imagem/gustavoguanabaracorrigido.png'>">
+  <a href="">Infelismente seu navegador não é compatível com isso</a>
+</iframe>
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis illum id, sequi quaerat neque vel eos eum assumenda eligendi, ut repudiandae quibusdam nesciunt modi quam earum voluptatibus. Explicabo, alias temporibus.</p>
+
+</body>
+</html>
